@@ -15,5 +15,6 @@ from .views import RegisterView
 
 urlpatterns = [
     # 用户注册: reverse(user:register)=='/register/'
-    re_path(r'^register/$', views.RegisterView.as_view(), name='register')
+    re_path(r'^register/$', views.RegisterView.as_view(), name='register'),
+    
 ]

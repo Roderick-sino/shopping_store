@@ -10,3 +10,12 @@ class RegisterView(View):
     def get(self, request):
         """提供注册页面"""
         return render(request, 'register.html')
+
+    def post(self, request):
+        """实现用户注册业务逻辑"""
+        # 接受参数
+
+        # 校验参数
+
+        # 保存注册数据：是注册业务的核心
+        pass

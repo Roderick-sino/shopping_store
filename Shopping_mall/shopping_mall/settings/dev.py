@@ -23,8 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # 追加导包路径 指向apps 包（静态写法）
 # sys.path.insert(1, 'D:\\Python_project\\shopping_store\\Shopping_mall\\shopping_mall\\apps')
 # （灵活写法）
-sys.path.insert(1, os.path.join(BASE_DIR,'apps'))
-
+sys.path.insert(1, os.path.join(BASE_DIR, 'apps'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -64,19 +63,6 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'shopping_mall.urls'
 
 TEMPLATES = [
-    # {
-    #     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    #     'DIRS': [],
-    #     'APP_DIRS': True,
-    #     'OPTIONS': {
-    #         'context_processors': [
-    #             'django.template.context_processors.debug',
-    #             'django.template.context_processors.request',
-    #             'django.contrib.auth.context_processors.auth',
-    #             'django.contrib.messages.context_processors.messages',
-    #         ],
-    #     },
-    # },
     {
         'BACKEND': 'django.template.backends.jinja2.Jinja2',  # 配置jinja2模板引擎
         'DIRS': [os.path.join(BASE_DIR, 'templates')],  # 配置模板文件加载的路径
@@ -175,6 +161,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
@@ -224,3 +211,5 @@ LOGGING = {
         },
     }
 }
+# 指定自定义的用户模型类 ： 语法 ==> '子应用.用户模型类'
+AUTH_USER_MODEL = "users.User"

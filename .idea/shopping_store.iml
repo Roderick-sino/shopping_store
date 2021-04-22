@@ -3,8 +3,10 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv/Shopping_mall" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping_store" />
+      <excludeFolder url="file://$MODULE_DIR$/environment" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (shopping_store)" jdkType="Python SDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
